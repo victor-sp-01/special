@@ -105,7 +105,11 @@ export default ()=>{
         }
 
         for(const date in dates){
-            $Ele.findChild(`#${ date }`).textContent = ('0' + dates[date]).slice(-2)
+            if(date === 'year'){
+                $Ele.findChild(`#${ date }`).textContent = dates[date]
+            } else {
+                $Ele.findChild(`#${ date }`).textContent = ('0' + dates[date]).slice(-2)
+            } 
         }
     }
 
