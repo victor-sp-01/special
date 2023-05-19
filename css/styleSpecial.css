@@ -1,0 +1,145 @@
+.div_apRDj {
+  position: fixed;
+  inset: 0;
+  background: #cfffff;
+}
+
+.div_2nAHD{
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img{
+    max-width: 100%;
+    max-height: 100%;
+
+    pointer-events: none;
+  }
+}
+
+.div_vAIlS{ 
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 65px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_SbbKd{
+  width: 65px;
+  height: 65px;
+
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: #e22ea5;
+
+  &:hover {
+    opacity: .5;
+  };
+}
+
+.div_5seTa { 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.div_ShbcK {
+  position: relative;
+  margin: auto; 
+  height: auto;
+
+  display: grid;
+  grid-template-columns: 1fr; 
+  align-items: end;
+  gap: 10px;
+}
+
+.div_neblB { 
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 65px);
+  gap: 10px; 
+
+  & ul { 
+    position: relative;
+    height: auto;
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+ 
+
+    & span {  
+      font-size: 13px;
+      color: #e22ea5;
+    }
+    & li {
+      font-weight: bold;
+      font-size: 17px;
+      color: #e22ea5;
+    }
+  }
+}
+
+.div_8mEal { 
+  position: relative;
+  width: 130px;
+  height: 65px; 
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & span {
+    position: absolute;
+    bottom: calc(100% + 15px);
+  }
+}
+
+.button_aDbQy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+  width: 65px;
+  height: 65px;
+ 
+
+  cursor: pointer;
+  color: #e22ea5;
+
+  display: none;
+
+  &:hover {
+    background: #e0e5ec;
+    box-shadow: inset 20px 20px 60px #bec3c9, inset -20px -20px 60px #e0e5ec;
+  }
+}
+
+
+@media only screen and (min-width: 600px) {
+  .div_neblB{
+    grid-template-columns: repeat(3, 130px);
+  }
+}
